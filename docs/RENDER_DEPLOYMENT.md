@@ -94,8 +94,6 @@ services:
   - type: web
     name: aeronex-frontend
     runtime: static
-    plan: free
-    region: oregon
     rootDir: frontend
     buildCommand: npm install && npm run build
     staticPublishPath: dist
