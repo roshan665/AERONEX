@@ -1,0 +1,21 @@
+{
+  "model_id": "isolation_forest_v1",
+  "version": "1.0.0",
+  "n_estimators": 100,
+  "contamination": 0.06,
+  "random_state": 42,
+  "training_dataset_id": "SYNTHETIC_NWP_BENCHMARK_2025",
+  "training_timestamp": "2026-09-26T23:37:53.602160+00:00",
+  "feature_schema_version": "v1.0.0",
+  "feature_columns": [
+    "temp_anomaly_z",
+    "wind_anomaly_z",
+    "mslp_anomaly_z",
+    "precip_rate_normalized",
+    "local_temp_grad",
+    "local_mslp_grad",
+    "normalized_lead_time",
+    "data_quality_factor"
+  ],
+  "is_fitted": true
+}

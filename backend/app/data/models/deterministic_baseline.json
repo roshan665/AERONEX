@@ -1,0 +1,7 @@
+{
+  "model_id": "deterministic_baseline",
+  "version": "1.0.0",
+  "z_threshold": 3.0,
+  "precip_threshold": 0.35,
+  "feature_schema_version": "v1.0.0"
+}
