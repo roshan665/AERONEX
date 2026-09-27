@@ -5,6 +5,7 @@
 [![Backend Tests](https://img.shields.io/badge/Pytest-156%20Passed%20(100%25)-success.svg)]()
 [![Frontend Build](https://img.shields.io/badge/Vite-Passing%20(0%20errors)-success.svg)]()
 [![SIH Verification](https://img.shields.io/badge/SIH%20E2E%20Flow-15%2F15%20Passed%20(100%25)-success.svg)]()
+[![Render Blueprint](https://img.shields.io/badge/Deploy%20on-Render-46E3B7.svg?logo=render&logoColor=white)](file:///d:/msi/SIH_26078/docs/RENDER_DEPLOYMENT.md)
 [![Documentation](https://img.shields.io/badge/Docs-Complete%20Blueprint-success.svg)](file:///d:/msi/SIH_26078/docs/)
 
 > **AeroNex** is an open, modular meteorological intelligence platform designed to ingest Numerical Weather Prediction (NWP) forecasts, systematically detect spatiotemporal weather anomalies (cyclones, heat domes, cold waves, pressure anomalies), compute their precise geographic footprints, and visualize forecast dynamics alongside quantifiable forecast uncertainty.
@@ -108,6 +109,7 @@ Detailed implementation specifications have been compiled in the [`docs/`](file:
 12. [**docs/FINAL_QA_REPORT.md**](file:///d:/msi/SIH_26078/docs/FINAL_QA_REPORT.md): Comprehensive Phase 8 QA audit, bug fixes, 156 pytest results, and 15-step SIH flow verification.
 13. [**docs/SCIENTIFIC_LIMITATIONS.md**](file:///d:/msi/SIH_26078/docs/SCIENTIFIC_LIMITATIONS.md): Transparent scientific analysis of domain boundaries, 0.25° grid limits, physical thresholds vs. climatology, and non-probabilistic scoring.
 14. [**docs/SIH_FINAL_PRESENTATION_GUIDE.md**](file:///d:/msi/SIH_26078/docs/SIH_FINAL_PRESENTATION_GUIDE.md): Final presentation script, technical explanations, honest innovation statement, 10 jury Q&As, and live demo fallback runbook.
+15. [**docs/RENDER_DEPLOYMENT.md**](file:///d:/msi/SIH_26078/docs/RENDER_DEPLOYMENT.md): Complete Render Blueprint deployment instructions, environment variables, and CDN architecture.
 
 ---
 

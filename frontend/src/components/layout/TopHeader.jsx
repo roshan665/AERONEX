@@ -10,7 +10,7 @@ import {
   AlertCircle
 } from 'lucide-react';
 import { NOTIFICATIONS_FEED } from '../../data/demoData';
-import { aeroNexApi } from '../../services/api';
+import { aeroNexApi, API_BASE_URL } from '../../services/api';
 
 export default function TopHeader({ 
   searchQuery, 
@@ -149,7 +149,7 @@ export default function TopHeader({
               ? 'bg-[#00D6A0]/10 border-[#00D6A0]/30 text-[#00D6A0]' 
               : 'bg-[#FF4568]/10 border-[#FF4568]/30 text-[#FF4568]'
           }`}
-          title={backendOnline ? 'FastAPI Backend Online (http://localhost:8000)' : 'FastAPI Backend Offline — Operating in Offline Demo Mode'}
+          title={backendOnline ? `FastAPI Backend Online (${API_BASE_URL})` : 'FastAPI Backend Offline — Operating in Offline Demo Mode'}
         >
           <span className="relative flex h-2 w-2">
             <span className={`animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 ${

@@ -17,12 +17,21 @@ class Settings:
     )
     
     # CORS Configuration
-    CORS_ORIGINS: List[str] = [
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-        "http://localhost:3000",
-        "http://127.0.0.1:3000",
-    ]
+    _cors_env: str = os.getenv("CORS_ORIGINS", "")
+    CORS_ORIGINS: List[str] = (
+        [origin.strip() for origin in _cors_env.split(",") if origin.strip()]
+        if _cors_env
+        else [
+            "http://localhost:5173",
+            "http://127.0.0.1:5173",
+            "http://localhost:3000",
+            "http://127.0.0.1:3000",
+        ]
+    )
+    CORS_ORIGIN_REGEX: str = os.getenv(
+        "CORS_ORIGIN_REGEX",
+        r"^https?:\/\/(localhost|127\.0\.0\.1|.*\.onrender\.com)(:\d+)?$",
+    )
     
     # Provenance and Data Strategy Flags
     DATA_PROVENANCE: str = "DEMO_SYNTHETIC_DATASET"
